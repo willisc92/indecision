@@ -5,10 +5,6 @@ import Header from './Header.js';
 import Options from './Options.js';
 import OptionModal from './OptionModal.js'; 
 
-// pull the state out of the constructor
-// convert 4 even handlers to class properties using arrow functions
-// delete the constructor completely
-
 export default class IndecisionApp extends React.Component {
     state = {
         options: [],
@@ -90,7 +86,6 @@ export default class IndecisionApp extends React.Component {
                             handleAddOption = {this.handleAddOption}
                         />
                     </div>
- 
                 </div>
                 <OptionModal
                     selectedOption={this.state.selectedOption}
